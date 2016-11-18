@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    
+    </head>
+    
+    <body>
+    
+        <form id="myForm">
+            <input type="text" name="duzina" placeholder="duzina"><br>
+            <input type="text" name="sirina" placeholder="sirina">
+        </form>
+        <br>
+        <button onclick="izracunajPovrsinu()">Povrsina</button>
+        <br>
+        <p id="demo"></p>
+        
+        <script>
+            function izracunajPovrsinu() {
+                var a = document.getElementById("myForm").elements.namedItem("duzina").value;
+                var b = document.getElementById("myForm").elements.namedItem("sirina").value;
+
+                document.getElementById("demo").innerHTML = "Povrsina iznosi: " + a*b;
+            }
+        </script>
+        
+    </body>
+</html>
